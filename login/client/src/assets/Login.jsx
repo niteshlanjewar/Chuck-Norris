@@ -34,7 +34,7 @@ function LoginPage() {
       alignItems: 'center',
       justifyContent: 'center',
       height: '100vh',
-      backgroundImage: 'url("https://img.freepik.com/free-photo/3d-rendering-emotions_23-2149081949.jpg?w=360")', // Replace 'your-image-url.jpg' with the URL of your background image
+      backgroundImage: 'url("https://as1.ftcdn.net/v2/jpg/03/98/14/28/1000_F_398142801_9ysK9z12ulpRAIspo6Rc7MGEci2Cvwzv.jpg")', // Replace 'your-image-url.jpg' with the URL of your background image
       backgroundSize: 'cover', // Adjust as needed
       backgroundRepeat: 'no-repeat', // Adjust as needed
     },
