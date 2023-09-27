@@ -5,12 +5,15 @@ This README provides a step-by-step guide for setting up and developing a MERN (
 
 **Register Page:
 ![Register Page](C:\Users\karti\OneDrive\Desktop\Chuck\Chuck-Norris\login\client\src\assets\Images\chuck1.jpg)
+Image Path: Chuck-Norris\login\client\src\assets\Images\chuck1.jpg
 
 **Login Page:
 ![Login Page](C:\Users\karti\OneDrive\Desktop\Chuck\Chuck-Norris\login\client\src\assets\Images\chuck2.jpg)
+Image Path: Chuck-Norris\login\client\src\assets\Images\chuck2.jpg
 
 **Home Page:
 ![Home Page](C:\Users\karti\OneDrive\Desktop\Chuck\Chuck-Norris\login\client\src\assets\Images\chuck3.jpg)
+Image Path: Chuck-Norris\login\client\src\assets\Images\chuck3.jpg
 
 ## Prerequisites
 
