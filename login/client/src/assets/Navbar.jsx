@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Navbar = ({ onLogout }) => {
-  // Assuming you have an isAuthenticated state
-  const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const navigate = useNavigate();
 
   const navbarStyles = {
     backgroundColor: '#333',
@@ -32,22 +32,19 @@ const Navbar = ({ onLogout }) => {
 
   const handleLogout = () => {
     // Perform the logout action
-    // In this example, we'll simply update the isAuthenticated state to false
-    setIsAuthenticated(false);
-
-    // You can also perform other actions here, such as clearing user data or tokens.
+    // In this example, we'll simply redirect to the signup page
+    navigate('/register');
   };
 
   return (
     <nav style={navbarStyles}>
       <ul className="navbar-list">
-        {/* Add condition to show/hide elements based on authentication state */}
-        {isAuthenticated && (
-          <>
-            <li className="navbar-item" style={listItemStyles}><a href="#" style={linkStyles}>Name</a></li>
-            <li className="navbar-item" style={listItemStyles}><button onClick={handleLogout} style={buttonStyles}>Logout</button></li>
-          </>
-        )}
+        <li className="navbar-item" style={listItemStyles}>
+          <NavLink to="/home" style={linkStyles}>Name</NavLink>
+        </li>
+        <li className="navbar-item" style={listItemStyles}>
+          <button onClick={handleLogout} style={buttonStyles}>Logout</button>
+        </li>
       </ul>
     </nav>
   );
