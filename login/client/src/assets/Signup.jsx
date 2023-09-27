@@ -34,7 +34,11 @@ function RegisterPage() {
       alignItems: 'center',
       justifyContent: 'center',
       height: '100vh',
+      backgroundImage: 'url("https://img.freepik.com/free-photo/3d-rendering-emotions_23-2149081949.jpg?w=360")', // Replace 'your-image-url.jpg' with the URL of your background image
+      backgroundSize: 'cover', // Adjust as needed
+      backgroundRepeat: 'no-repeat', // Adjust as needed
     },
+   
     form: {
       width: '300px',
       padding: '20px',
