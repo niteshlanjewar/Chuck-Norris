@@ -3,9 +3,8 @@
 
 This README provides a step-by-step guide for setting up and developing a MERN (MongoDB, Express.js, React, Node.js) website using Visual Studio Code.
 
-**Register Page:
-<img src="images/chuck1.jpg" alt="Register Page">
-
+**Register Page:**
+![Register Page](./assets/Images/chuck1.jpg)
 Image Path: Chuck-Norris\login\client\src\assets\Images\chuck1.jpg
 
 **Login Page:
