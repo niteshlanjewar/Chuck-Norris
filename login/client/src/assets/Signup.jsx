@@ -3,30 +3,30 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-function RegisterPage() {
-  // Define state variables to store user input
+function RegisterPage({ setUserFullName }){
+  
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate()
 
-  // Handle form submission
+  
   const handleSubmit = (e) => {
     e.preventDefault()
     axios.post('http://localhost:3001/register', {fullName, email, password})
     .then(result => {console.log(result)
-    navigate('/login')
+      setUserFullName(fullName);
+      navigate('/login');
     })
     .catch(err => console.log(err))
 
-    // You can perform registration logic here
-    // For this example, we'll just log the user input
+   
     console.log('Full Name:', fullName);
     console.log('Email:', email);
     console.log('Password:', password);
   };
 
-  // Inline CSS styles
+  
   const styles = {
     container: {
       display: 'flex',
@@ -34,9 +34,9 @@ function RegisterPage() {
       alignItems: 'center',
       justifyContent: 'center',
       height: '100vh',
-      backgroundImage: 'url("https://c8.alamy.com/comp/DNM48K/cartoon-illustration-of-huge-set-of-laughing-people-faces-DNM48K.jpg")', // Replace 'your-image-url.jpg' with the URL of your background image
-      backgroundSize: 'cover', // Adjust as needed
-      backgroundRepeat: 'no-repeat', // Adjust as needed
+      backgroundImage: 'url("https://c8.alamy.com/comp/DNM48K/cartoon-illustration-of-huge-set-of-laughing-people-faces-DNM48K.jpg")', 
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat', 
     },
    
     form: {

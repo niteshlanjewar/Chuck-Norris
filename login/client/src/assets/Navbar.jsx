@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 
-const Navbar = ({ onLogout }) => {
+const Navbar = ({ onLogout, userFullName }) => {
   const navigate = useNavigate();
 
   const navbarStyles = {
@@ -31,8 +31,7 @@ const Navbar = ({ onLogout }) => {
   };
 
   const handleLogout = () => {
-    // Perform the logout action
-    // In this example, we'll simply redirect to the signup page
+    
     navigate('/register');
   };
 
@@ -40,7 +39,7 @@ const Navbar = ({ onLogout }) => {
     <nav style={navbarStyles}>
       <ul className="navbar-list">
         <li className="navbar-item" style={listItemStyles}>
-          <NavLink to="/home" style={linkStyles}>Name</NavLink>
+          <NavLink to="/home" style={linkStyles}>{userFullName}</NavLink>
         </li>
         <li className="navbar-item" style={listItemStyles}>
           <button onClick={handleLogout} style={buttonStyles}>Logout</button>

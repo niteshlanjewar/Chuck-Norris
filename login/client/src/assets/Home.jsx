@@ -16,11 +16,11 @@ const App = () => {
       return response.json();
     })
     .then(data => {
-      // Update the joke state with the fetched joke
+      
       setJoke(data.value);
     })
     .catch(error => {
-      // Handle errors
+      
       console.error('There was a problem fetching the joke:', error);
     });
   };
@@ -81,7 +81,7 @@ const App = () => {
             <div className="joke">
               <p>{joke || 'Click the button to get a joke'}</p>
             </div>
-            <button onClick={getJoke}>Get A DAD Joke</button>
+            <button onClick={getJoke}>Get a Joke</button>
           </div>
         </section>
       </body>
